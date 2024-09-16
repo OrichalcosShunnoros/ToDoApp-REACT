@@ -1,0 +1,47 @@
+.TodoItem {
+    border: solid 2px #05008c;
+    width: 90%;
+    margin: 1rem 0;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    font-size: 1.1;
+    background-color: #ffffffd3;
+}
+
+.TodoItem-desc {
+    color: #000;
+    background: red;
+}
+
+.TodoItem-icon {
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.TodoItem-check:hover {
+    color: #429900;
+    font-size: 1.7rem;
+}
+
+.TodoItem-remove:hover {
+    color: #E0144C;
+    font-size: 1.7rem;
+}
+
+.TodoItem--activate {
+    background-color: #b2b2b27e;
+}
+
+.TodoItem--activate > .TodoItem-text {
+    text-decoration: line-through;
+}
+
+.TodoItem--activate > .TodoItem-check {
+    color: #429900;
+    font-size: 2rem;
+}
